@@ -8,12 +8,12 @@ let handler = async (m, { conn, text }) => {
     txt = Object.keys(data).map(v => `*${v.capitalize()}:* ${data[v]}`).join('\n'),
     pp = await conn.profilePictureUrl(data.id, 'image').catch(console.error)
     let groupinfo = `
-*┏━━━━━━━━━━━━━━━┓*
-*┃☂️ ⫹⫺ المعرف:* ${data.id}◞
-*┃🧪 ⫹⫺ الاسم:* ${data.subject}
-*┃📅 ⫹⫺ التاريخ:* ${data.creation}
-*┃👑 ⫹⫺ المالك:* ${data.owner}
-*┗━━━━━━━━━━━━━━━┛*
+*┏━━━━━━━━━◗🐛◖━━━━━━┓*
+*┃ 🎟️ ايدي:* ${data.id}◞
+*┃🕵🏻‍♂️الاسم:* ${data.subject}
+*┃ 💸التاريخ:* ${data.creation}
+*┃🪸المالك:* ${data.owner}
+*┗━━━━━━━━◗🐛◖━━━━━━━┛*
 `
   await conn.reply(m.chat, groupinfo, m)
   const botones = [
@@ -21,7 +21,7 @@ let handler = async (m, { conn, text }) => {
 ]
 await conn.sendMessage(m.chat, { text: `*┏━━━━━━━━━━━━━━┓*\n┃هل تريد نسخ الوصف ؟ •🌷\n*┗━━━━━━━━━━━━━━┛*`, templateButtons: botones, footer: wm })
 }
-handler.command = /^فحص$/i
+handler.command = /^فحص_رابط|فحص$/i
 
 export default handler
 handler.owner = false
