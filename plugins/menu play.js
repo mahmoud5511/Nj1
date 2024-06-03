@@ -58,6 +58,6 @@ let str = `                  ✥━─━⌬ 𝒎𝒆𝒈𝒐_𝒃𝒐𝒕 ⌬�
 
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = ['الترفيه']
+handler.command = ['الالعاب|الألعاب|قسم_الألعاب|قسم_الالعاب']
 
 export default handler
