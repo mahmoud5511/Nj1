@@ -39,6 +39,6 @@ let str = `                  ✥━─━⌬ 𝒎𝒆𝒈𝒐_𝒃𝒐𝒕 ⌬�
 
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = ['قائمتي' ,'قايمه','القايمه']
+handler.command = ['قائمه_مطور' ,'قائمة_المطور','قائمه_المطور']
 handler.rowner = true
 export default handler
